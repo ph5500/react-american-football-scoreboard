@@ -8,7 +8,7 @@ import BottomRow from "./BottomRow";
 let homeTeam = prompt("Set home team.");
 let awayTeam = prompt("Set away team.");
 
-const timer = () => {
+const Timer = () => {
   const [secondsPassed, setSecondsPassed] = useState(0);
   const [minutesPassed, setMinutesPassed] = useState(0);
   const [quarter, setQuarter] = useState(0);
@@ -32,7 +32,7 @@ function App() {
   const [awayScore, setAwayScore] = useState(0),
     [homeScore, setHomeScore] = useState(0),
     addAwayTD = event => setAwayScore(awayScore + 7),
-    addAAwayFG = event => setAwayScore(awayScore + 3),
+    addAwayFG = event => setAwayScore(awayScore + 3),
     addHomeTD = event => setHomeScore(homeScore + 7),
     addHomeFG = event => setHomeScore(homeScore + 3);
 
